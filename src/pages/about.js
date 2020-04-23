@@ -3,7 +3,7 @@ import Header from "../components/header"
 
 export default () => (
   <div style={{ color: `teal` }}>
-    <Header headerText="About Gatsby" />
-    <p>Such wow. Very React.</p>
+    <Header headerText="folks @ work" />
+    <p>about ... time ...</p>
   </div>
 )
