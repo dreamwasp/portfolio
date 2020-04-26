@@ -1,34 +1,51 @@
 .header {
   background-color: #6193bc;
   color: whitesmoke;
-  display: flex;
 }
 
 .textContainer {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0.2em 0 1em;
 }
+
+.nameLinks {
+  margin: 0.5em;
+}
+
 .name {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-weight: 400;
   color: whitesmoke;
-  margin: 0;
 }
 
 .links {
-  color: #121213;
+  color: whitesmoke;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+
+.logos {
+  color: whitesmoke;
+  font-size: 0.8em;
+  padding: 0em;
+  display: flex;
+}
+
+.resize {
+  width: 2em;
 }
 
 a,
 a:visited {
-  color: #0cbaba;
+  color: whitesmoke;
+  padding: 0 0.5em 0 0.5em;
   text-decoration: none;
   transition: all 0.2s;
 }
 
 a:hover,
 a:active {
-  text-decoration: underline;
+  filter: invert(93%);
+  padding: 0 0.5em 0 0.5em;
 }
