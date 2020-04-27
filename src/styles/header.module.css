@@ -1,12 +1,10 @@
 .header {
-  background-color: #6193bc;
   color: whitesmoke;
 }
 
 .textContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .nameLinks {
@@ -14,38 +12,68 @@
 }
 
 .name {
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: 400;
-  color: whitesmoke;
+  color: #b5c5ca;
 }
 
 .links {
   color: whitesmoke;
-  font-size: 0.8em;
-  padding: 0.5em;
+  font-size: 1.2em;
+  padding: 0.2em 0.5em 0 1.8em;
 }
 
 .logos {
   color: whitesmoke;
-  font-size: 0.8em;
   padding: 0em;
   display: flex;
+  align-items: center;
 }
 
 .resize {
+  margin: 0.8em;
   width: 2em;
 }
 
-a,
-a:visited {
-  color: whitesmoke;
+.resize:hover {
+  margin: 0.8em;
+  width: 2em;
+  filter: grayscale(100%) brightness(45%) sepia(100%) hue-rotate(-185deg)
+    saturate(200%) contrast(0.8);
+}
+
+.name,
+.name:visited {
+  color: #b5c5ca;
   padding: 0 0.5em 0 0.5em;
   text-decoration: none;
   transition: all 0.2s;
 }
 
-a:hover,
-a:active {
-  filter: invert(93%);
+.name:hover,
+.name:active {
+  color: #6193bc;
   padding: 0 0.5em 0 0.5em;
+}
+
+.link,
+.link:visited {
+  color: whitesmoke;
+  padding: 0 0.5em 0 0.5em;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.link:hover,
+.link:active {
+  color: #6193bc;
+  padding: 0 0.5em 0 0.5em;
+  border-bottom: 2px solid #6193bc;
+}
+
+.line {
+  border: 0;
+  height: 0.5px;
+  background-image: linear-gradient(0.25turn, #121213, #293e5a, #121213);
 }
