@@ -66,9 +66,3 @@
   height: 0.5px;
   background-color: #484e50;
 }
-
-.active {
-  color: red;
-  padding: 0 0.5em 0 0.5em;
-  border-bottom: 2px solid #b5c5ca;
-}

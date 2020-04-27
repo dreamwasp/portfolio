@@ -4,6 +4,8 @@ import headerStyles from "../styles/header.module.css"
 import gitHub from "../../static/GitHub-Mark-Light-32px.png"
 import li from "../../static/li.png"
 
+const activeStyle = { color: "#6193bc", borderBottom: "2px solid #6193bc" }
+
 export default ({ children }) => (
   <div style={{ margin: 0 }}>
     <h6 className={headerStyles.header}>
@@ -11,13 +13,25 @@ export default ({ children }) => (
         <div className={headerStyles.nameLinks}>
           <h6 className={headerStyles.name}>cassie spain</h6>
           <div className={headerStyles.links}>
-            <Link className={headerStyles.link} to="/">
+            <Link
+              className={headerStyles.link}
+              activeStyle={activeStyle}
+              to="/"
+            >
               about
             </Link>
-            <Link className={headerStyles.link} to="/work/">
+            <Link
+              className={headerStyles.link}
+              activeStyle={activeStyle}
+              to="/work/"
+            >
               work
             </Link>
-            <Link className={headerStyles.link} to="/contact/">
+            <Link
+              className={headerStyles.link}
+              activeStyle={activeStyle}
+              to="/contact/"
+            >
               contact
             </Link>
           </div>
