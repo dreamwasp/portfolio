@@ -9,11 +9,9 @@ export default ({ children }) => (
     <h6 className={headerStyles.header}>
       <div className={headerStyles.textContainer}>
         <div className={headerStyles.nameLinks}>
-          <Link className={headerStyles.name} to="/">
-            cassie spain
-          </Link>
+          <h6 className={headerStyles.name}>cassie spain</h6>
           <div className={headerStyles.links}>
-            <Link className={headerStyles.link} to="/about/">
+            <Link className={headerStyles.link} to="/">
               about
             </Link>
             <Link className={headerStyles.link} to="/work/">

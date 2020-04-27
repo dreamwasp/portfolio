@@ -1,5 +1,6 @@
 .header {
   color: whitesmoke;
+  background-color: #0e0e0e;
 }
 
 .textContainer {
@@ -15,6 +16,8 @@
   font-size: 2em;
   font-weight: 400;
   color: #b5c5ca;
+  margin: 0;
+  padding: 0 0.5em 0 0.5em;
 }
 
 .links {
@@ -42,20 +45,6 @@
     saturate(200%) contrast(0.8);
 }
 
-.name,
-.name:visited {
-  color: #b5c5ca;
-  padding: 0 0.5em 0 0.5em;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.name:hover,
-.name:active {
-  color: #6193bc;
-  padding: 0 0.5em 0 0.5em;
-}
-
 .link,
 .link:visited {
   color: whitesmoke;
@@ -75,5 +64,11 @@
 .line {
   border: 0;
   height: 0.5px;
-  background-image: linear-gradient(0.25turn, #121213, #293e5a, #121213);
+  background-color: #484e50;
+}
+
+.active {
+  color: red;
+  padding: 0 0.5em 0 0.5em;
+  border-bottom: 2px solid #b5c5ca;
 }

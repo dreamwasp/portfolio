@@ -1,11 +1,21 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "cassie spain",
+    menuLinks: [
+      {
+        name: "about",
+        link: "/",
+      },
+      {
+        name: "work",
+        link: "/work",
+      },
+      {
+        name: "contact",
+        link: "/contact",
+      },
+    ],
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,

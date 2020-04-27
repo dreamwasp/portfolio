@@ -1,0 +1,29 @@
+p {
+  color: #afc2d5;
+}
+
+.container {
+  display: flex;
+  margin: 4.5em;
+}
+
+.me {
+  width: 20em;
+  margin: 0 0 0 1em;
+  border: 5px;
+  border-color: #6193bc;
+}
+
+.link,
+.link:visited {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.link:hover,
+.link:active {
+  color: #6193bc;
+  border-bottom: 2px solid #6193bc;
+}

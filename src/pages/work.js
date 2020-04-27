@@ -1,11 +1,12 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Header from "../components/header"
+import genText from "../styles/genText.module.css"
 
 export default () => (
   <Layout>
-    <Header headerText="folk @ work" />
-    <p>about ... time ... lol ...</p>
+    <div className={genText.container}>
+      <p>about ... time ... lol ...</p>
+    </div>
   </Layout>
 )
