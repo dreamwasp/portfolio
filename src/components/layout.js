@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import headerStyles from "../styles/header.module.css"
-import gitHub from "../../static/GitHub-Mark-Light-32px.png"
-import li from "../../static/li.png"
+import gitHub from "../../static/github.svg"
+import li from "../../static/li.svg"
 
 const activeStyle = { color: "#6193bc", borderBottom: "2px solid #6193bc" }
 
@@ -37,12 +37,20 @@ export default ({ children }) => (
           </div>
         </div>
         <div className={headerStyles.logos}>
-          <Link className={headerStyles.logo} to="/about/">
+          <a
+            href="https://github.com/dreamwasp"
+            target="_blank"
+            className={headerStyles.logo}
+          >
             <img src={gitHub} className={headerStyles.resize} />
-          </Link>
-          <Link className={headerStyles.logo} to="/work/">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ceaspain/"
+            target="_blank"
+            className={headerStyles.logo}
+          >
             <img src={li} className={headerStyles.resize} />
-          </Link>
+          </a>
         </div>
       </div>
       <hr className={headerStyles.line}></hr>

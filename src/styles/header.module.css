@@ -36,13 +36,15 @@
 .resize {
   margin: 0.8em;
   width: 2em;
+  fill: whitesmoke;
 }
 
 .resize:hover {
   margin: 0.8em;
   width: 2em;
-  filter: grayscale(100%) brightness(45%) sepia(100%) hue-rotate(-185deg)
-    saturate(200%) contrast(0.8);
+  transition: all 0.2s;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(11%) saturate(1569%)
+    hue-rotate(165deg) brightness(88%) contrast(91%);
 }
 
 .link,
