@@ -7,13 +7,56 @@ p {
   margin: 4.5em;
 }
 
-.me {
-  width: 20em;
-  margin: 0 0 0 1em;
-  border: 5px;
-  border-color: #6193bc;
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
+.me {
+  width: 30em;
+  margin: 0 0 0 1em;
+  border: solid;
+  border-color: #0e0e0e;
+  box-shadow: 16px -16px #6193bc;
+}
+
+.workHeader {
+  width: 25em;
+  display: flex;
+  padding: 0.3em 0.3em 0 0.3em;
+  border: solid;
+  border-color: whitesmoke;
+  background-color: #0e0e0e;
+  color: #b5c5ca;
+  box-shadow: 10px -10px #6193bc;
+  margin-bottom: 1.2em;
+}
+
+.workHeaderText {
+  margin: 0;
+}
+
+.section {
+  display: flex;
+  margin: 0 0 0 1em;
+  width: 66%;
+}
+
+.sectionHeader {
+  display: flex;
+  color: #6193bc;
+}
+
+.sectionText {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 2em;
+}
+
+.sectionPhotoContainer {
+  margin: 0.5em 0 0 0;
+}
 .link,
 .link:visited {
   color: whitesmoke;

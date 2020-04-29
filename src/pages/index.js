@@ -19,9 +19,9 @@ export default () => (
         firestore, + postgres but learning more all the time.
         <br></br>
         <br></br>
-        <Link className={genText.link} to="/contact/">
+        <a href="mailto:cea.spain@gmail.com" className={genText.link}>
           drop me a line
-        </Link>
+        </a>
         !
       </p>
       <img className={genText.me} src={me} />
