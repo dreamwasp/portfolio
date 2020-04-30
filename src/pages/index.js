@@ -8,7 +8,7 @@ import me from "../../static/unnamed.jpg"
 
 export default () => (
   <Layout>
-    <div className={genText.container}>
+    <div className={genText.rightContainer}>
       <p>
         hi there - i'm cass, a non-binary software engineer in ridgewood queens.
         i attended the grace hopper program @ fullstack academy in 2020 + have

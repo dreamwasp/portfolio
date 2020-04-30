@@ -7,6 +7,11 @@ p {
   margin: 4.5em;
 }
 
+.rightContainer {
+  display: flex;
+  margin: 4.5em 4.5em 4.5em 12.5em;
+}
+
 .sectionsContainer {
   display: flex;
   flex-direction: column;
@@ -14,7 +19,7 @@ p {
 }
 
 .me {
-  width: 30em;
+  width: 25em;
   margin: 0 0 0 1em;
   border: solid;
   border-color: #0e0e0e;

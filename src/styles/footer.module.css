@@ -1,0 +1,21 @@
+.footer {
+  color: #484e50;
+  background-color: #161618;
+  width: 100%;
+  bottom: 0px;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0.3em;
+}
+
+.line {
+  border: 0;
+  height: 0.5px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}

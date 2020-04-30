@@ -5,7 +5,7 @@ import genText from "../styles/genText.module.css"
 
 export default () => (
   <Layout>
-    <div className={genText.container}>
+    <div className={genText.rightContainer}>
       <div className={genText.sectionsContainer}>
         <div className={genText.sectionContainer}>
           <div className={genText.workHeader}>

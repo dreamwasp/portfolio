@@ -5,7 +5,7 @@ import genText from "../styles/genText.module.css"
 
 export default () => (
   <Layout>
-    <div className={genText.container}>
+    <div className={genText.rightContainer}>
       <p>Send me a message at cea.spain@gmail.com!</p>
     </div>
   </Layout>
