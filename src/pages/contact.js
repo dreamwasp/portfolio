@@ -8,7 +8,7 @@ export default () => (
     <div className={genText.rightContainer}>
       <p>connect w/ me on //icon//</p>
       <p>check out my projects on //github//</p>
-      <p>shoot me an email //email</p>
+      <p>shoot me an email //email//</p>
     </div>
   </Layout>
 )
