@@ -1,5 +1,6 @@
 p {
   color: #afc2d5;
+  text-align: justify;
 }
 
 .container {
@@ -9,7 +10,7 @@ p {
 
 .rightContainer {
   display: flex;
-  margin: 4.5em 4.5em 4.5em 12.5em;
+  margin: 10vh 10vw 15vh 10vw;
 }
 
 .sectionsContainer {
@@ -20,10 +21,16 @@ p {
 
 .me {
   width: 25em;
-  margin: 0 0 0 1em;
+  margin: 0 0 0 0;
   border: solid;
   border-color: #0e0e0e;
   box-shadow: 16px -16px #6193bc;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3em 0 0;
 }
 
 .workHeader {
@@ -35,7 +42,7 @@ p {
   background-color: #0e0e0e;
   color: #b5c5ca;
   box-shadow: 10px -10px #6193bc;
-  margin-bottom: 1.2em;
+  margin-bottom: 2.5em;
 }
 
 .workHeaderText {
@@ -44,24 +51,56 @@ p {
 
 .section {
   display: flex;
-  margin: 0 0 0 1em;
-  width: 66%;
+  margin: 0 3vw 3em 1vw;
 }
 
 .sectionHeader {
   display: flex;
   color: #6193bc;
+  width: max-content;
+  border-bottom: solid;
+  border-color: whitesmoke;
+  margin: 0 0 0.5em 0.5em;
 }
 
 .sectionText {
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 2em;
+  margin: 0 5vw 0 1.5vw;
 }
 
-.sectionPhotoContainer {
-  margin: 0.5em 0 0 0;
+.jobTitleContainer {
+  display: flex;
+  flex-direction: column;
 }
+
+.jobDescription {
+  margin: 0;
+  font-style: italic;
+}
+.companyTimeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5vw 0 1.5vw;
+}
+
+.companyTime {
+  color: #b5c5ca;
+  font-size: 1.2em;
+  margin: 0 0 0.5em 0;
+}
+
+.vPhoto {
+  height: 30vmax;
+  margin: 0 0 0 0;
+}
+
+.hPhoto {
+  height: 45vh;
+  margin: 0 0 0 0;
+}
+
 .link,
 .link:visited {
   color: whitesmoke;
@@ -74,4 +113,34 @@ p {
 .link:active {
   color: #6193bc;
   border-bottom: 2px solid #6193bc;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0.4em 0;
+}
+
+.resize {
+  width: 2em;
+  margin: 0em;
+  align-self: center;
+}
+
+.resize:hover {
+  width: 2em;
+  margin: 0em;
+  align-self: center;
+  transition: all 0.2s;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(11%) saturate(1569%)
+    hue-rotate(165deg) brightness(88%) contrast(91%);
+}
+
+.logoText {
+  color: #6193bc;
 }
