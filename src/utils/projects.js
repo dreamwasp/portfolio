@@ -21,18 +21,21 @@ const projObject = [
       {
         icon: gitHub,
         link: "https://github.com/return-JSON/wheres-doggo",
-        desc: "github",
+        id: "github",
+        desc: "repo'd on github",
       },
       {
         icon: pawprint,
         link: "http://expo.io/@cpascale43/wheresdoggo",
-        desc: "expo",
+        id: "expo",
+        desc: "live on expo",
       },
       {
         icon: youtube,
         link:
           "https://www.youtube.com/watch?v=jEXQXNjvmns&list=PLx0iOsdUOUmk6YoAw7y5AbHeXf45tuNnF&index=13&t=0s",
-        desc: "youtubez",
+        id: "youtube",
+        desc: "presentation on youtube",
       },
     ],
     photo: hanky,
@@ -47,7 +50,8 @@ const projObject = [
       {
         icon: gitHub,
         link: "https://github.com/dreamwasp/strikethru",
-        desc: "github",
+        id: "github",
+        desc: "repo'd on github",
       },
     ],
     photo: amazon,
@@ -58,17 +62,19 @@ const projObject = [
     description:
       "an e-commerce platform designed to sell a variety of slimes featuring a RESTful backend using Express and Sequelize, a product catalog, persistent user + guest sessions, and an integrated checkout process. ",
     tech:
-      "built with Node.Js, Postgres, Sequelize, Express, Axios, React and Redux",
+      "built with node.js, postgres, sequelize, express, axios, react, + redux",
     links: [
       {
         icon: gitHub,
         link: "https://github.com/A-BST-Grows-In-Brooklyn/graceShopper",
-        desc: "github",
+        id: "github",
+        desc: "repo'd on github",
       },
       {
         icon: cart,
         link: "https://slime-generation.herokuapp.com/",
-        desc: "github",
+        id: "heroku",
+        desc: "live on heroku",
       },
     ],
     photo: slimeGen,

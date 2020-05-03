@@ -26,7 +26,10 @@ export default () => (
           !
         </p>
       </div>
-      <img className={genText.me} src={me} />
+
+      <div>
+        <img className={genText.me} src={me} />
+      </div>
     </div>
   </Layout>
 )
