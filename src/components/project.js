@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Typist from "react-typist"
 
 import genText from "../styles/genText.module.css"
 
@@ -32,7 +33,9 @@ export default props => {
                 </div>
               ))}
             </div>
-            {isShown && <div>{innerText}</div>}
+            {isShown && (
+              <Typist className={genText.hoverText}>{innerText}</Typist>
+            )}
           </div>
         </div>
         <img className={props.project.photoClass} src={props.project.photo} />

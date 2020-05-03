@@ -143,3 +143,19 @@ p {
 .logoText {
   color: #6193bc;
 }
+
+.introText {
+  font: 400 1.2em Fira Code, sans-serif;
+  color: whitesmoke;
+}
+
+.hoverText {
+  font: 400 1em Fira Code, sans-serif;
+  color: whitesmoke;
+  align-self: center;
+  margin: 1em 0em 0em 0em;
+}
+
+.greenText {
+  color: #80e1ff;
+}

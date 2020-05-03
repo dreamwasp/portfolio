@@ -19,7 +19,9 @@
     "gatsby-plugin-typography": "^2.4.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-typist": "^2.0.5",
     "react-typography": "^0.16.19",
+    "typeface-fira-code": "^1.1.4",
     "typography": "^0.16.19"
   },
   "devDependencies": {
