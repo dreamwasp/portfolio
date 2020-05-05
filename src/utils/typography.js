@@ -12,7 +12,7 @@ const typography = new Typography({
       styles: [],
     },
   ],
-  headerFontFamily: ["Baloo Bhai 2"],
-  bodyFontFamily: ["Lato"],
+  headerFontFamily: ["Fira Code", 400],
+  bodyFontFamily: ["Fira Code"],
 })
 export default typography

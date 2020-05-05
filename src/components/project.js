@@ -5,7 +5,7 @@ import genText from "../styles/genText.module.css"
 
 export default props => {
   const [isShown, setIsShown] = useState(false)
-  const [innerText, setInnerText] = useState("okay")
+  const [innerText, setInnerText] = useState("")
   const hoverEffect = inner => {
     setIsShown(true)
     setInnerText(inner)
@@ -38,7 +38,9 @@ export default props => {
             )}
           </div>
         </div>
-        <img className={props.project.photoClass} src={props.project.photo} />
+        <div className={genText.photoFrame}>
+          <img className={props.project.photoClass} src={props.project.photo} />
+        </div>
       </div>
     </div>
   )

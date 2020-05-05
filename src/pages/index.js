@@ -10,10 +10,10 @@ export default () => (
     <div className={genText.rightContainer}>
       <div className={genText.aboutText}>
         <Typist className={genText.introText}>
-          hi there! i'm <span className={genText.greenText}>cass</span>, a
+          hi there! i'm <span className={genText.greenText}>cass</span> — a
           non-binary
           <span className={genText.greenText}> software engineer</span> in
-          ridgewood queens.
+          ridgewood, queens.
         </Typist>
         <br></br>
         <p>

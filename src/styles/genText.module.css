@@ -1,5 +1,6 @@
 p {
   color: #afc2d5;
+  /* color: var(--color-black) */
   text-align: justify;
 }
 
@@ -90,14 +91,21 @@ p {
   margin: 0 0 0.5em 0;
 }
 
-.vPhoto {
-  height: 30vmax;
-  margin: 0 0 0 0;
+.photoFrame {
+  background-color: whitesmoke;
+  display: flex;
+  border-radius: 15%;
+  width: 100%;
+  border: solid;
+  border-color: #0e0e0e;
+  box-shadow: 10px -10px #b5c5ca;
+  margin-bottom: 2.5em;
 }
 
-.hPhoto {
-  height: 45vh;
+.vPhoto {
   margin: 0 0 0 0;
+  border-radius: 15%;
+  object-fit: scale-down;
 }
 
 .link,
@@ -154,6 +162,14 @@ p {
   color: whitesmoke;
   align-self: center;
   margin: 1em 0em 0em 0em;
+}
+
+.contact {
+  font: 400 1em Fira Code, sans-serif;
+  color: whitesmoke;
+  align-self: center;
+  margin: 1em 0em 0em 0em;
+  display: flex;
 }
 
 .greenText {
