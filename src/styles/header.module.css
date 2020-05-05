@@ -24,7 +24,7 @@
 .links {
   color: whitesmoke;
   font-size: 1.2em;
-  padding: 0.2em 0.5em 0 1.8em;
+  padding: 0.1em 0.5em 0 2em;
 }
 
 .logos {
@@ -52,6 +52,7 @@
 .link,
 .link:visited {
   color: whitesmoke;
+  font-weight: 300;
   padding: 0 0.5em 0 0.5em;
   text-decoration: none;
   transition: all 0.2s;

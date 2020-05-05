@@ -21,8 +21,9 @@ export default () => (
           had my head in my laptop ever since. when not coding, catch me reading
           experimental fiction, playing animal crossing, or checking out weird
           art of all kinds.<br></br>
-          <br></br>experienced in javascript, node.js, react, react native,
-          redux, firestore, + postgres but learning more all the time.
+          <br></br>experienced in javascript, node.js, postgres, firestore,
+          sequelize, axios, express, react, react native, + redux but learning
+          more all the time.
           <br></br>
           <br></br>
           <a href="mailto:cea.spain@gmail.com" className={genText.link}>

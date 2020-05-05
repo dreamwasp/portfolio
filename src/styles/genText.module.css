@@ -23,7 +23,7 @@ p {
 .me {
   margin: 0 0 0 0;
   border: solid;
-  border-color: #0e0e0e;
+  border-color: whitesmoke;
   box-shadow: 16px -16px #6193bc;
 }
 
@@ -47,6 +47,7 @@ p {
 
 .workHeaderText {
   margin: 0;
+  padding: 0.17em;
 }
 
 .section {

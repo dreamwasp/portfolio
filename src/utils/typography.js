@@ -1,18 +1,10 @@
 import Typography from "typography"
 const typography = new Typography({
-  baseFontSize: "18px",
+  baseFontSize: "16px",
   baseLineHeight: 1.666,
-  googleFonts: [
-    {
-      name: "Baloo Bhai 2",
-      styles: [400],
-    },
-    {
-      name: "Lato",
-      styles: [],
-    },
-  ],
-  headerFontFamily: ["Fira Code", 400],
+  headerFontFamily: ["Fira Code"],
+  headerWeight: 400,
   bodyFontFamily: ["Fira Code"],
+  headerWeight: 300,
 })
 export default typography
