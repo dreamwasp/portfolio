@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
 import Project from "../components/project"
@@ -11,6 +12,9 @@ import genText from "../styles/genText.module.css"
 
 export default () => (
   <Layout>
+    <Helmet>
+      <title>cassie spain | work</title>
+    </Helmet>
     <div className={genText.rightContainer}>
       <div className={genText.sectionsContainer}>
         <div className={genText.sectionContainer}>

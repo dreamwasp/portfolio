@@ -1,6 +1,9 @@
 import React, { useState } from "react"
 import Typist from "react-typist"
 
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+
 import genText from "../styles/genText.module.css"
 
 export default props => {

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Helmet } from "react-helmet"
 import Typist from "react-typist"
 
 import Layout from "../components/layout"
@@ -17,6 +18,9 @@ export default () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>cassie spain | contact</title>
+      </Helmet>
       <div className={genText.rightContainer}>
         <div className={genText.logos}>
           {contacts.map(contact => (

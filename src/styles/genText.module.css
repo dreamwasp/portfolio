@@ -1,6 +1,5 @@
 p {
   color: #afc2d5;
-  /* color: var(--color-black) */
   text-align: justify;
 }
 
@@ -20,8 +19,11 @@ p {
   width: 100%;
 }
 
+.meFrame {
+  width: 50%;
+}
+
 .me {
-  margin: 0 0 0 0;
   border: solid;
   border-color: whitesmoke;
   box-shadow: 16px -16px #6193bc;
@@ -29,6 +31,8 @@ p {
 
 .aboutText {
   display: flex;
+  width: 50%;
+
   flex-direction: column;
   margin: 0 3% 0 0;
 }
