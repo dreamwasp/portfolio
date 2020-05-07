@@ -8,8 +8,6 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import genText from "../styles/genText.module.css"
 
-import me from "../../static/unnamed.jpg"
-
 export default () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
@@ -58,7 +56,7 @@ export default () => {
           <Img
             className={genText.me}
             fluid={data.file.childImageSharp.fluid}
-            alt="A corgi smiling"
+            alt="a photo of the author in front of two neon tapestries"
           />
         </div>
       </div>

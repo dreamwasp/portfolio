@@ -10,7 +10,7 @@ p {
 
 .rightContainer {
   display: flex;
-  margin: 5% 10% 5% 10%;
+  margin: 5vw;
 }
 
 .sectionsContainer {
@@ -20,7 +20,7 @@ p {
 }
 
 .meFrame {
-  width: 50%;
+  width: 40%;
 }
 
 .me {
@@ -31,8 +31,7 @@ p {
 
 .aboutText {
   display: flex;
-  width: 50%;
-
+  width: 60%;
   flex-direction: column;
   margin: 0 3% 0 0;
 }
@@ -54,9 +53,20 @@ p {
   padding: 0.17em;
 }
 
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .section {
   display: flex;
   margin: 0 3vw 3em 1vw;
+}
+
+.sectionTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .sectionHeader {
@@ -71,7 +81,7 @@ p {
 .sectionText {
   display: flex;
   flex-direction: column;
-  margin: 0 5vw 0 1.5vw;
+  margin: 0 2vw 0 2vw;
 }
 
 .jobTitleContainer {
@@ -83,6 +93,7 @@ p {
   margin: 0;
   font-style: italic;
 }
+
 .companyTimeContainer {
   display: flex;
   flex-direction: row;
@@ -94,6 +105,12 @@ p {
   color: #b5c5ca;
   font-size: 1.2em;
   margin: 0 0 0.5em 0;
+}
+
+.photoContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .photoFrame {
@@ -111,6 +128,7 @@ p {
   margin: 0 0 0 0;
   border-radius: 15%;
   object-fit: scale-down;
+  width: 100%;
 }
 
 .link,
@@ -158,14 +176,18 @@ p {
 }
 
 .introText {
-  font: 400 1.2em Fira Code, sans-serif;
+  font-size: 1.2em;
   color: whitesmoke;
+}
+
+.hoverTextContainer {
+  height: 1em;
+  align-self: center;
 }
 
 .hoverText {
   font: 400 1em Fira Code, sans-serif;
   color: whitesmoke;
-  align-self: center;
   margin: 1em 0em 0em 0em;
 }
 

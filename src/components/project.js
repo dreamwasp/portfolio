@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import Typist from "react-typist"
 
-import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import genText from "../styles/genText.module.css"
@@ -13,12 +12,11 @@ export default props => {
     setIsShown(true)
     setInnerText(inner)
   }
-
   return (
-    <div>
-      <h3 className={genText.sectionHeader}>{props.project.title}</h3>
+    <div className={genText.sectionContainer}>
       <div className={genText.section}>
-        <div className={genText.sectionTextsContainer}>
+        <div className={genText.sectionTextContainer}>
+          <h3 className={genText.sectionHeader}>{props.project.title}</h3>
           <div className={genText.sectionText}>
             <p>{props.project.description}</p>
             <p>{props.project.tech}</p>
@@ -36,13 +34,20 @@ export default props => {
                 </div>
               ))}
             </div>
-            {isShown && (
-              <Typist className={genText.hoverText}>{innerText}</Typist>
-            )}
+            <div className={genText.hoverTextContainer}>
+              {isShown && (
+                <Typist className={genText.hoverText}>{innerText}</Typist>
+              )}
+            </div>
           </div>
         </div>
-        <div className={genText.photoFrame}>
-          <img className={props.project.photoClass} src={props.project.photo} />
+
+        <div className={genText.photoContainer}>
+          <Img
+            className={genText.photoFrame}
+            fluid={props.image.node.childImageSharp.fluid}
+            alt={props.project.alt}
+          />
         </div>
       </div>
     </div>

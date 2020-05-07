@@ -1,42 +1,74 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import Project from "../components/project"
 import Job from "../components/job"
 
 import projects from "../utils/projects"
 import jobs from "../utils/jobs"
+import { imageFilter } from "../utils/helperFunctions"
 
 import genText from "../styles/genText.module.css"
 
-export default () => (
-  <Layout>
-    <Helmet>
-      <title>cassie spain | work</title>
-    </Helmet>
-    <div className={genText.rightContainer}>
-      <div className={genText.sectionsContainer}>
-        <div className={genText.sectionContainer}>
-          <div className={genText.workHeader}>
-            <h2 className={genText.workHeaderText}>projects</h2>
-          </div>
+// aspectRatio
+// base64
+// src
+// srcSet
 
-          {projects.map(project => (
-            <Project project={project} />
-          ))}
+export default () => {
+  const data = useStaticQuery(graphql`
+    query aQuery {
+      allFile(filter: { extension: { regex: "/(png)/" } }) {
+        edges {
+          node {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+            base
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <Layout>
+      <Helmet>
+        <title>cassie spain | work</title>
+      </Helmet>
+      {console.log("imageLoader", data.allFile.edges)}
+      <div className={genText.rightContainer}>
+        <div className={genText.sectionsContainer}>
           <div className={genText.sectionContainer}>
             <div className={genText.workHeader}>
-              <h2 className={genText.workHeaderText}>
-                professional experience
-              </h2>
+              <h2 className={genText.workHeaderText}>projects</h2>
             </div>
-            {jobs.map(job => (
-              <Job job={job} />
+
+            {projects.map(project => (
+              <Project
+                project={project}
+                image={imageFilter(data.allFile.edges, project.fileName)}
+              />
             ))}
+            <div className={genText.sectionContainer}>
+              <div className={genText.workHeader}>
+                <h2 className={genText.workHeaderText}>
+                  professional experience
+                </h2>
+              </div>
+              {jobs.map(job => (
+                <Job job={job} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}

@@ -1,7 +1,3 @@
-import hanky from "../../static/hanky.png"
-import amazon from "../../static/amazon.png"
-import slimeGen from "../../static/slimeGen.png"
-
 import gitHub from "../../static/github.svg"
 import pawprint from "../../static/pawprint.svg"
 import youtube from "../../static/youtube.svg"
@@ -38,7 +34,8 @@ const projObject = [
         desc: "presentation on youtube",
       },
     ],
-    photo: hanky,
+    fileName: "hanky1.png",
+    alt: "hanky1.png",
     photoClass: genText.vPhoto,
   },
   {
@@ -54,7 +51,8 @@ const projObject = [
         desc: "repo'd on github",
       },
     ],
-    photo: amazon,
+    fileName: "amazon.png",
+    alt: "amazon.png",
     photoClass: genText.vPhoto,
   },
   {
@@ -77,8 +75,9 @@ const projObject = [
         desc: "live on heroku",
       },
     ],
-    photo: slimeGen,
     photoClass: genText.vPhoto,
+    fileName: "slimeGen.png",
+    alt: "slimeGen.png",
   },
 ]
 
