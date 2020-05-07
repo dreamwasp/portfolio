@@ -23,12 +23,18 @@ export default props => {
             <div className={genText.logos}>
               {props.project.links.map(logo => (
                 <div className={genText.logo}>
-                  <a href={logo.link} className={genText.logo} target="_blank">
+                  <a
+                    href={logo.link}
+                    className={genText.logo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={logo.icon}
                       onMouseEnter={() => hoverEffect(logo.desc)}
                       onMouseLeave={() => setIsShown(false)}
                       className={genText.resize}
+                      alt={logo.desc}
                     />
                   </a>
                 </div>

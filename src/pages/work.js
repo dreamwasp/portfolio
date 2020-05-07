@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -13,11 +12,6 @@ import jobs from "../utils/jobs"
 import { imageFilter } from "../utils/helperFunctions"
 
 import genText from "../styles/genText.module.css"
-
-// aspectRatio
-// base64
-// src
-// srcSet
 
 export default () => {
   const data = useStaticQuery(graphql`

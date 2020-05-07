@@ -38,19 +38,30 @@ export default () => (
         <a
           href="https://github.com/dreamwasp"
           target="_blank"
+          rel="noopener noreferrer"
           className={headerStyles.logo}
         >
-          <img src={gitHub} className={headerStyles.resize} />
+          <img
+            src={gitHub}
+            className={headerStyles.resize}
+            alt="github icon link"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/ceaspain/"
           target="_blank"
+          rel="noopener noreferrer"
           className={headerStyles.logo}
+          alt="linkedIn icon link"
         >
           <img src={li} className={headerStyles.resize} />
         </a>
         <a href="mailto:cea.spain@gmail.com" className={headerStyles.logo}>
-          <img src={email} className={headerStyles.resize} />
+          <img
+            src={email}
+            className={headerStyles.resize}
+            alt="email icon link"
+          />
         </a>
       </div>
     </div>

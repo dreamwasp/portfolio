@@ -11,6 +11,6 @@ const typography = new Typography({
   headerFontFamily: ["Fira Code"],
   headerWeight: 400,
   bodyFontFamily: ["Fira Code"],
-  headerWeight: 300,
+  bodyWeight: 300,
 })
 export default typography
