@@ -21,6 +21,7 @@ p {
 
 .meFrame {
   width: 40%;
+  align-self: center;
 }
 
 .me {
@@ -37,7 +38,8 @@ p {
 }
 
 .workHeader {
-  width: 25em;
+  width: 25%;
+  min-width: fit-content;
   display: flex;
   padding: 0.3em 0.3em 0 0.3em;
   border: solid;
@@ -186,13 +188,13 @@ p {
 }
 
 .hoverText {
-  font: 400 1em Fira Code, sans-serif;
+  font: 400 1em;
   color: whitesmoke;
   margin: 1em 0em 0em 0em;
 }
 
 .contact {
-  font: 400 1em Fira Code, sans-serif;
+  font: 400 1em;
   color: whitesmoke;
   align-self: center;
   margin: 1em 0em 0em 0em;
@@ -201,4 +203,60 @@ p {
 
 .greenText {
   color: #80e1ff;
+}
+
+.greyText {
+  color: #24282b;
+  padding: 0 0.5em 0 0;
+}
+
+.contactsContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contactFrame {
+  width: 25%;
+  min-width: fit-content;
+  padding: 0.3em 0.3em 0 0.3em;
+  border: solid;
+  border-color: whitesmoke;
+  background-color: #0e0e0e;
+  color: #b5c5ca;
+  box-shadow: 10px -10px #6193bc;
+  margin-bottom: 2.5em;
+  transition: all 0.2s;
+}
+
+.contactFrame:hover {
+  width: 25%;
+  min-width: fit-content;
+  padding: 0.3em 0.3em 0 0.3em;
+  border: solid;
+  border-color: whitesmoke;
+  background-color: #0e0e0e;
+  color: #b5c5ca;
+  box-shadow: 5px -5px #6193bc;
+  margin-bottom: 2.5em;
+}
+
+.contact {
+  padding: 0.5em;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.contactLink,
+.contactLink:visited {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.contactLink:hover,
+.contactLink:active {
+  color: #6193bc;
+  border-bottom: 1px solid #6193bc;
 }

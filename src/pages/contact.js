@@ -22,21 +22,43 @@ export default () => {
         <title>cassie spain | contact</title>
       </Helmet>
       <div className={genText.rightContainer}>
-        <div className={genText.logos}>
-          {contacts.map(contact => (
-            <div className={genText.logo}>
-              <a href={contact.link} className={genText.logo} target="_blank">
-                <img
-                  src={contact.icon}
-                  onMouseEnter={() => hoverEffect(contact.desc)}
-                  onMouseLeave={() => setIsShown(false)}
-                  className={genText.resize}
-                />
+        <div className={genText.contactsContainer}>
+          <div className={genText.contactFrame}>
+            <p className={genText.contact}>
+              <span className={genText.greyText}> • • • </span> shoot me
+              an&nbsp;
+              <a
+                href="mailto:cea.spain@gmail.com"
+                className={genText.contactLink}
+              >
+                email
               </a>
-            </div>
-          ))}
+              ,
+            </p>
+            <p className={genText.contact}>
+              <span className={genText.greyText}> • • • • • • </span> connect
+              with me on&nbsp;
+              <a
+                href="mailto:cea.spain@gmail.com"
+                className={genText.contactLink}
+              >
+                linked in
+              </a>
+              ,
+            </p>
+            <p className={genText.contact}>
+              <span className={genText.greyText}> • • • • • • • • • </span>&
+              check me out on&nbsp;
+              <a
+                href="mailto:cea.spain@gmail.com"
+                className={genText.contactLink}
+              >
+                github
+              </a>
+              !
+            </p>
+          </div>
         </div>
-        {isShown && <Typist className={genText.workHeader}>{innerText}</Typist>}
       </div>
     </Layout>
   )

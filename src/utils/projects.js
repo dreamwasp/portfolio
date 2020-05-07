@@ -60,7 +60,7 @@ const projObject = [
     description:
       "an e-commerce platform designed to sell a variety of slimes featuring a RESTful backend using Express and Sequelize, a product catalog, persistent user + guest sessions, and an integrated checkout process. ",
     tech:
-      "built with node.js, postgres, sequelize, express, axios, react, + redux.",
+      "built with node.js, postgres, sequelize, express, axios, react, redux, + material ui.",
     links: [
       {
         icon: gitHub,
