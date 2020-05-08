@@ -9,6 +9,7 @@ export default () => (
   <Layout>
     <Helmet>
       <title>cassie spain | contact</title>
+      <meta name="description" content="cassie spain | software engineer" />
     </Helmet>
     <div className={genText.rightContainer}>
       <div className={genText.contactsContainer}>
