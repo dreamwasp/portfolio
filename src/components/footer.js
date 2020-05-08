@@ -4,6 +4,6 @@ import footerStyles from "../styles/footer.module.css"
 export default () => (
   <div className={footerStyles.footer}>
     <hr className={footerStyles.line}></hr>
-    <div className={footerStyles.textContainer}>© 2020, cassie spain</div>
+    <div className={footerStyles.footerTextContainer}>© 2020, cassie spain</div>
   </div>
 )

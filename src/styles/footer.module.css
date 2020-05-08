@@ -5,7 +5,7 @@
   bottom: 0px;
 }
 
-.textContainer {
+.footerTextContainer {
   display: flex;
   justify-content: center;
   height: 100%;
@@ -21,9 +21,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .textContainer {
+  .footerTextContainer {
     text-align: center;
     height: 100%;
-    margin: 0.3em;
+    margin: 0em;
+    font-size: 3vw;
   }
 }
