@@ -279,6 +279,10 @@ p {
     font-size: 0.9em;
     margin: 3% 0 0 0;
   }
+  .meFrame {
+    width: 70%;
+    align-self: center;
+  }
   .me {
     box-shadow: 8px -8px #6193bc;
   }
