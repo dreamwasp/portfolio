@@ -260,3 +260,49 @@ p {
   color: #6193bc;
   border-bottom: 1px solid #6193bc;
 }
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 0.8em;
+  }
+  .rightContainer {
+    flex-direction: column-reverse;
+    margin: 3vw;
+  }
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 3%;
+  }
+  .introText {
+    font-size: 0.9em;
+    margin: 3% 0 0 0;
+  }
+  .me {
+    box-shadow: 8px -8px #6193bc;
+  }
+  .workHeader {
+    box-shadow: 5px -5px #6193bc;
+    margin-bottom: 1em;
+  }
+  .workHeaderText {
+    margin: 0;
+    padding: 0.17em;
+    font-size: 1em;
+  }
+  .sectionHeader {
+    font-size: 1em;
+  }
+  .photoContainer {
+    display: none;
+  }
+  .companyTime {
+    display: none;
+  }
+  .contact {
+    padding: 0 0 0.5em 0;
+    margin: 0;
+    font-size: 3vw;
+  }
+}
