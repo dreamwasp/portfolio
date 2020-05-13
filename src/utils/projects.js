@@ -1,7 +1,7 @@
-import gitHub from "../../static/github.svg"
-import pawprint from "../../static/pawprint.svg"
-import youtube from "../../static/youtube.svg"
-import cart from "../../static/cart.svg"
+import gitHub from "../icons/github.svg"
+import pawprint from "../icons/pawprint.svg"
+import youtube from "../icons/youtube.svg"
+import cart from "../icons/cart.svg"
 
 import genText from "../styles/genText.module.css"
 
@@ -41,7 +41,7 @@ const projObject = [
   {
     title: "strikethru",
     description:
-      "a Google Chrome plug-in that aggregates news data to help consumers make conscious buying decisions. allows the user to track whatever issues are pertinent to them across multiple websites and even synced across browsers.",
+      "a Google Chrome plug-in that aggregates news data to help consumers make conscious buying decisions. allows the user to track whatever issues are pertinent to them across multiple websites and even synced across browsers. built over the course of four days for a coding challenge.",
     tech: "built with node.js, axios, + react.",
     links: [
       {

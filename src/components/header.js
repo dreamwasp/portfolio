@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 
 import headerStyles from "../styles/header.module.css"
 
-import gitHub from "../../static/github.svg"
-import li from "../../static/li.svg"
-import email from "../../static/email.svg"
+import gitHub from "../icons/github.svg"
+import li from "../icons/li.svg"
+import email from "../icons/email.svg"
 
 const activeStyle = { color: "#6193bc", borderBottom: "2px solid #6193bc" }
 
