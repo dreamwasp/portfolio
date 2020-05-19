@@ -1,1 +1,1 @@
-<p> source code for my portfoilio website. built with Gatsby & GraphQL. </p>
+<p> source code for my portfolio website. built with Gatsby & GraphQL. </p>
