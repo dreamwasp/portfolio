@@ -1,7 +1,4 @@
 import React from "react"
-import theme from "../utils/themes"
-
-let switchStyle = theme.switch
 
 const Switch = ({ isOn, handleToggle }) => {
   return (

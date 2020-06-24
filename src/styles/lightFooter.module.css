@@ -1,0 +1,30 @@
+.footer {
+  color: #484e50;
+  background-color: red;
+  width: 100%;
+  bottom: 0px;
+}
+
+.footerTextContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0.3em;
+}
+
+.line {
+  border: 0;
+  height: 0.5px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerTextContainer {
+    text-align: center;
+    height: 100%;
+    margin: 0em;
+    font-size: 3vw;
+  }
+}

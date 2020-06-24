@@ -1,8 +1,10 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
+import { useDispatch, useSelector } from "react-redux"
+import { setTheme, setBoolean } from "../state/createStore"
 
 import Switch from "./Switch"
-import theme from "../utils/themes"
+import { themeObject } from "../utils/themes"
 
 import gitHub from "../icons/github.svg"
 import li from "../icons/li.svg"
@@ -11,8 +13,14 @@ import email from "../icons/email.svg"
 const activeStyle = { color: "#6193bc", borderBottom: "2px solid #6193bc" }
 
 export default () => {
-  let headerStyles = theme.header
+  let headerStyles = themeObject.header
   const [value, setValue] = useState(false)
+  const currentTheme = useSelector(state => ({
+    theme: state.theme,
+    boolean: state.boolean,
+  }))
+  headerStyles = currentTheme.theme.header
+  const dispatch = useDispatch()
 
   return (
     <h6 className={headerStyles.header}>
@@ -73,9 +81,11 @@ export default () => {
             />
           </a>
           <Switch
-            isOn={value}
+            isOn={currentTheme.boolean}
             handleToggle={() => {
               setValue(!value)
+              dispatch(setTheme(!value))
+              dispatch(setBoolean(!value))
             }}
           />
         </div>

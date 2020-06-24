@@ -1,12 +1,12 @@
 .header {
-  color: whitesmoke;
+  color: #0e0e0e;
   margin: 0;
 }
 
 .textContainer {
   display: flex;
   justify-content: space-between;
-  background-color: red;
+  background-color: #ebebeb;
 }
 
 .nameLinks {
@@ -16,19 +16,19 @@
 .name {
   font-size: 2em;
   font-weight: 400;
-  color: #b5c5ca;
+  color: #66858f;
   margin: 0;
   padding: 0 0.5em 0 0.5em;
 }
 
 .links {
-  color: whitesmoke;
+  color: #b5c5ca;
   font-size: 1.2em;
   padding: 0.1em 0.5em 0 2em;
 }
 
 .logos {
-  color: whitesmoke;
+  color: #b5c5ca;
   margin: 0em 0.5em;
   padding: 0em;
   display: flex;
@@ -38,7 +38,7 @@
 .resize {
   margin: 0.8em;
   width: 2em;
-  fill: whitesmoke;
+  fill: #b5c5ca;
 }
 
 .resize:hover {
@@ -51,7 +51,7 @@
 
 .link,
 .link:visited {
-  color: whitesmoke;
+  color: black;
   font-weight: 300;
   padding: 0 0.5em 0 0.5em;
   text-decoration: none;
