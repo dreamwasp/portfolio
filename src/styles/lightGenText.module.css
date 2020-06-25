@@ -43,10 +43,10 @@
   display: flex;
   padding: 0.3em 0.3em 0 0.3em;
   border: solid;
-  border-color: whitesmoke;
-  background-color: #0e0e0e;
-  color: #b5c5ca;
-  box-shadow: 10px -10px #6193bc;
+  border-color: #0e0e0e;
+  background-color: #e0e0e0;
+  color: #66858f;
+  box-shadow: 10px -10px #b5c5ca;
   margin-bottom: 2.5em;
 }
 
@@ -76,7 +76,7 @@
   color: #6193bc;
   width: max-content;
   border-bottom: solid;
-  border-color: whitesmoke;
+  border-color: #0e0e0e;
   margin: 0 0 0.5em 0.5em;
 }
 
@@ -94,6 +94,8 @@
 .jobDescription {
   margin: 0;
   font-style: italic;
+  color: #66858f;
+  text-align: justify;
 }
 
 .companyTimeContainer {
@@ -104,7 +106,7 @@
 }
 
 .companyTime {
-  color: #b5c5ca;
+  color: #8b8b8b;
   font-size: 1.2em;
   margin: 0 0 0.5em 0;
 }
@@ -162,6 +164,8 @@
   width: 2em;
   margin: 0em;
   align-self: center;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(11%) saturate(0%)
+    hue-rotate(165deg) brightness(88%) contrast(91%);
 }
 
 .resize:hover {
@@ -189,7 +193,7 @@
 
 .hoverText {
   font: 400 1em;
-  color: whitesmoke;
+  color: #66858f;
   margin: 1em 0em 0em 0em;
 }
 

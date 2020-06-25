@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-
+import { useSelector } from "react-redux"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -9,6 +9,7 @@ import Job from "../components/job"
 
 import projects from "../utils/projects"
 import jobs from "../utils/jobs"
+import { themeObject } from "../utils/themes"
 import { imageFilter } from "../utils/helperFunctions"
 
 import genText from "../styles/genText.module.css"
@@ -30,6 +31,12 @@ export default () => {
       }
     }
   `)
+
+  let genText = themeObject.general
+  const currentTheme = useSelector(state => ({
+    theme: state.theme,
+  }))
+  genText = currentTheme.theme.general
 
   return (
     <Layout>

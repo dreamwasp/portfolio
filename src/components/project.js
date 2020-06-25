@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import Typist from "react-typist"
+import { useSelector } from "react-redux"
+import { themeObject } from "../utils/themes"
 
 import Img from "gatsby-image"
-
-import genText from "../styles/genText.module.css"
 
 export default props => {
   const [isShown, setIsShown] = useState(false)
@@ -12,6 +12,13 @@ export default props => {
     setIsShown(true)
     setInnerText(inner)
   }
+
+  let genText = themeObject.general
+  const currentTheme = useSelector(state => ({
+    theme: state.theme,
+  }))
+  genText = currentTheme.theme.general
+
   return (
     <div className={genText.sectionContainer}>
       <div className={genText.section}>

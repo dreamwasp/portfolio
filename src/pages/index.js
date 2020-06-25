@@ -21,6 +21,7 @@ export default () => {
       }
     }
   `)
+
   let genText = themeObject.general
   const currentTheme = useSelector(state => ({
     theme: state.theme,

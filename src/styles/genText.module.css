@@ -94,6 +94,8 @@
 .jobDescription {
   margin: 0;
   font-style: italic;
+  color: #afc2d5;
+  text-align: justify;
 }
 
 .companyTimeContainer {
