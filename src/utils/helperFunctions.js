@@ -5,3 +5,8 @@ export const imageFilter = (arr, fileName) => {
   })
   return newArr[0]
 }
+
+export const sundowning = boolean => {
+  if (boolean) return "🌚"
+  else return "☀️"
+}

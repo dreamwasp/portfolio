@@ -1,4 +1,5 @@
 import React from "react"
+import { sundowning } from "../utils/helperFunctions"
 
 const Switch = ({ isOn, handleToggle }) => {
   return (
@@ -15,7 +16,8 @@ const Switch = ({ isOn, handleToggle }) => {
         className="react-switch-label"
         htmlFor={`react-switch-new`}
       >
-        <span className={`react-switch-button`} />
+        <div className={`react-switch-button`}></div>
+        <div className={`emoji`}>🌙 ☀️</div>
       </label>
     </>
   )
