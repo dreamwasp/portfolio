@@ -11,6 +11,7 @@ export default () => {
     theme: state.theme,
   }))
   genText = currentTheme.theme.general
+
   return (
     <Layout>
       <Helmet>

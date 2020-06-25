@@ -44,7 +44,6 @@ export default () => {
         <title>cassie spain | work</title>
         <meta name="description" content="cassie spain | software engineer" />
       </Helmet>
-      {console.log("imageLoader", data.allFile.edges)}
       <div className={genText.rightContainer}>
         <div className={genText.sectionsContainer}>
           <div className={genText.sectionContainer}>

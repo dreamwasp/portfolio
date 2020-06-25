@@ -39,4 +39,5 @@ const reducer = (state, action) => {
 const initialState = { theme: themeObject, boolean: false }
 
 const createStore = () => reduxCreateStore(reducer, initialState)
+
 export default createStore
