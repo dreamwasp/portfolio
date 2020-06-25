@@ -6,7 +6,7 @@
 .textContainer {
   display: flex;
   justify-content: space-between;
-  background-color: #ebebeb;
+  background-color: #e0e0e0;
 }
 
 .nameLinks {
@@ -39,6 +39,8 @@
   margin: 0.8em;
   width: 2em;
   fill: #b5c5ca;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(11%) saturate(0%)
+    hue-rotate(165deg) brightness(88%) contrast(91%);
 }
 
 .resize:hover {
@@ -51,7 +53,7 @@
 
 .link,
 .link:visited {
-  color: black;
+  color: #0e0e0e;
   font-weight: 300;
   padding: 0 0.5em 0 0.5em;
   text-decoration: none;

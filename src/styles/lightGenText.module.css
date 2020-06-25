@@ -1,5 +1,5 @@
 .paragraphs {
-  color: #afc2d5;
+  color: #66858f;
   text-align: justify;
 }
 
@@ -26,8 +26,8 @@
 
 .me {
   border: solid;
-  border-color: whitesmoke;
-  box-shadow: 16px -16px #6193bc;
+  border-color: #121213;
+  box-shadow: 16px -16px #b5c5ca;
 }
 
 .aboutText {
@@ -135,10 +135,10 @@
 
 .link,
 .link:visited {
-  color: whitesmoke;
+  color: #0e0e0e;
   text-decoration: none;
   transition: all 0.2s;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid #0e0e0e;
 }
 
 .link:hover,
@@ -179,7 +179,7 @@
 
 .introText {
   font-size: 1.2em;
-  color: whitesmoke;
+  color: #0e0e0e;
 }
 
 .hoverTextContainer {

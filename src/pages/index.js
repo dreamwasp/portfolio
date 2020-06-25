@@ -1,12 +1,13 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Typist from "react-typist"
+import { useSelector } from "react-redux"
+import { themeObject } from "../utils/themes"
 
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
-import genText from "../styles/genText.module.css"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -20,6 +21,11 @@ export default () => {
       }
     }
   `)
+  let genText = themeObject.general
+  const currentTheme = useSelector(state => ({
+    theme: state.theme,
+  }))
+  genText = currentTheme.theme.general
 
   return (
     <Layout>
@@ -29,14 +35,16 @@ export default () => {
       </Helmet>
       <div className={genText.rightContainer}>
         <div className={genText.aboutText}>
-          <Typist className={genText.introText}>
-            hi there! i'm <span className={genText.greenText}>cass</span> — a
-            non-binary
-            <span className={genText.greenText}> software engineer</span> in
-            ridgewood, queens.
-          </Typist>
+          <div className={genText.introText}>
+            <Typist>
+              hi there! i'm <span className={genText.greenText}>cass</span> — a
+              non-binary
+              <span className={genText.greenText}> software engineer</span> in
+              ridgewood, queens.
+            </Typist>
+          </div>
           <br></br>
-          <p>
+          <p className={genText.paragraphs}>
             i attended the grace hopper program @ fullstack academy in 2020 +
             have had my head in my laptop ever since. when not coding, catch me
             reading experimental fiction, playing animal crossing, or checking

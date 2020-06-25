@@ -18,8 +18,8 @@ export default props => {
         <div className={genText.sectionTextContainer}>
           <h3 className={genText.sectionHeader}>{props.project.title}</h3>
           <div className={genText.sectionText}>
-            <p>{props.project.description}</p>
-            <p>{props.project.tech}</p>
+            <p className={genText.paragraphs}>{props.project.description}</p>
+            <p className={genText.paragraphs}>{props.project.tech}</p>
             <div className={genText.logos}>
               {props.project.links.map(logo => (
                 <div className={genText.logo}>
