@@ -44,3 +44,49 @@
 .react-switch-label:active .react-switch-button {
   width: 2.5em;
 }
+
+.phone-div {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .emoji {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    padding: 0;
+  }
+
+  .phone-div {
+    display: flex;
+    font-size: 1.5em;
+    visibility: visible;
+    height: inherit;
+    width: inherit;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .react-switch-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    background: grey;
+    border-radius: 50px;
+    position: relative;
+    transition: background-color 0.2s;
+  }
+
+  .react-switch-label .react-switch-button {
+    position: absolute;
+    padding: 0em;
+    top: 0em;
+    left: 0em;
+    width: 0em;
+    height: 0em;
+  }
+}

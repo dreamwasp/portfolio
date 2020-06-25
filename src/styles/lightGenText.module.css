@@ -206,11 +206,11 @@
 }
 
 .greenText {
-  color: #80e1ff;
+  color: #00bcf5;
 }
 
 .greyText {
-  color: #24282b;
+  color: #8b8b8b;
   padding: 0 0.5em 0 0;
 }
 
@@ -225,10 +225,10 @@
   min-width: fit-content;
   padding: 0.3em 0.3em 0 0.3em;
   border: solid;
-  border-color: whitesmoke;
-  background-color: #0e0e0e;
-  color: #b5c5ca;
-  box-shadow: 10px -10px #6193bc;
+  border-color: #0e0e0e;
+  background-color: #e0e0e0;
+  color: #66858f;
+  box-shadow: 10px -10px #b5c5ca;
   margin-bottom: 2.5em;
   transition: all 0.2s;
 }
@@ -238,10 +238,10 @@
   min-width: fit-content;
   padding: 0.3em 0.3em 0 0.3em;
   border: solid;
-  border-color: whitesmoke;
-  background-color: #0e0e0e;
-  color: #b5c5ca;
-  box-shadow: 5px -5px #6193bc;
+  border-color: #0e0e0e;
+  background-color: #e0e0e0;
+  color: #66858f;
+  box-shadow: 5px -5px #b5c5ca;
   margin-bottom: 2.5em;
 }
 
@@ -249,14 +249,15 @@
   padding: 0.5em;
   margin: 0;
   font-size: 1.2em;
+  color: #0e0e0e;
 }
 
 .contactLink,
 .contactLink:visited {
-  color: whitesmoke;
+  color: #0e0e0e;
   text-decoration: none;
   transition: all 0.2s;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid #0e0e0e;
 }
 
 .contactLink:hover,
@@ -266,7 +267,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  p {
+  .paragraphs {
     font-size: 0.8em;
   }
   .rightContainer {
@@ -288,10 +289,10 @@
     align-self: center;
   }
   .me {
-    box-shadow: 8px -8px #6193bc;
+    box-shadow: 8px -8px #b5c5ca;
   }
   .workHeader {
-    box-shadow: 5px -5px #6193bc;
+    box-shadow: 5px -5px #b5c5ca;
     margin-bottom: 1em;
   }
   .workHeaderText {

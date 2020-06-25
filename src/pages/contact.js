@@ -1,10 +1,9 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-
-import Layout from "../components/layout"
-
 import { useSelector } from "react-redux"
 import { themeObject } from "../utils/themes"
+
+import Layout from "../components/layout"
 
 export default () => {
   let genText = themeObject.general

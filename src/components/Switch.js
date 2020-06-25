@@ -18,6 +18,7 @@ const Switch = ({ isOn, handleToggle }) => {
       >
         <div className={`react-switch-button`}></div>
         <div className={`emoji`}>🌙 ☀️</div>
+        <div className={`phone-div`}>{sundowning(isOn)}</div>
       </label>
     </>
   )
