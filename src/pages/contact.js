@@ -46,8 +46,24 @@ export default () => {
               ,
             </p>
             <p className={genText.contact}>
-              <span className={genText.greyText}> • • • • • • • • • </span>&
-              check me out on&nbsp;
+              <span className={genText.greyText}> • • • • • • • • • </span>
+              read my articles on&nbsp;
+              <a
+                href="https://medium.com/@cea.spain"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={genText.contactLink}
+              >
+                medium
+              </a>
+              ,
+            </p>
+            <p className={genText.contact}>
+              <span className={genText.greyText}>
+                {" "}
+                • • • • • • • • • • • •{" "}
+              </span>{" "}
+              & check me out on&nbsp;
               <a
                 href="https://github.com/dreamwasp"
                 target="_blank"

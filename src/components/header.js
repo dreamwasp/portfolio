@@ -9,6 +9,7 @@ import { themeObject } from "../utils/themes"
 import gitHub from "../icons/github.svg"
 import li from "../icons/li.svg"
 import email from "../icons/email.svg"
+import medium from "../icons/medium.svg"
 
 const activeStyle = { color: "#6193bc", borderBottom: "2px solid #6193bc" }
 
@@ -52,6 +53,18 @@ export default () => {
           </div>
         </div>
         <div className={headerStyles.logos}>
+          <a
+            href="https://medium.com/@cea.spain"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={headerStyles.logo}
+          >
+            <img
+              src={medium}
+              className={headerStyles.resize}
+              alt="medium icon link"
+            />
+          </a>
           <a
             href="https://github.com/dreamwasp"
             target="_blank"
