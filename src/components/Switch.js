@@ -17,7 +17,10 @@ const Switch = ({ isOn, handleToggle }) => {
         htmlFor={`react-switch-new`}
       >
         <div className={`react-switch-button`}></div>
-        <div className={`emoji`}>🌙 ☀️</div>
+        <div className={`emojis`}>
+          <div className={`emoji`}>🌙</div>
+          <div className={`emoji`}>☀️</div>
+        </div>
         <div className={`phone-div`}>{sundowning(isOn)}</div>
       </label>
     </>
