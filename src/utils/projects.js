@@ -2,6 +2,7 @@ import gitHub from "../icons/github.svg"
 import pawprint from "../icons/pawprint.svg"
 import youtube from "../icons/youtube.svg"
 import cart from "../icons/cart.svg"
+import chrome from "../icons/chrome.svg"
 
 import genText from "../styles/genText.module.css"
 
@@ -49,6 +50,13 @@ const projObject = [
         link: "https://github.com/dreamwasp/strikethru",
         id: "github",
         desc: "repo'd on github",
+      },
+      {
+        icon: chrome,
+        link:
+          "https://chrome.google.com/webstore/detail/strikethru/iiddfdfnhogoilpammecdbbcnaambjid?hl=en&authuser=3",
+        id: "chrome",
+        desc: "live on the chrome store",
       },
     ],
     fileName: "amazon.png",
