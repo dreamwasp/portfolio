@@ -39,7 +39,6 @@ export default () => {
           <div className={genText.introText}>
             <Typist>
               hi there! i'm <span className={genText.greenText}>cass</span> — a
-              non-binary
               <span className={genText.greenText}> software engineer</span> in
               ridgewood, queens.
             </Typist>
