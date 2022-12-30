@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@openfonts/baloo-bhai-2_latin": "^1.0.1",
-    "gatsby": "^2.20.25",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.4.1",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-sharp": "^2.6.1",
