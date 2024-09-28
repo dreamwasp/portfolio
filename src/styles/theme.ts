@@ -12,4 +12,6 @@ export const theme = {
     other: "#b5c5ca",
     subtle: "#484e50",
   },
-};
+} as const;
+
+export type ThemeType = typeof theme;
