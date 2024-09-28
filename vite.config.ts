@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
+import webfontDownload from "vite-plugin-webfont-dl";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -7,5 +8,8 @@ export default defineConfig({
     react({
       jsxImportSource: "@emotion/react", // add this
     }),
+    webfontDownload([
+      "https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap",
+    ]),
   ],
 });
